@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salon_app/home_page.dart';
 import 'package:salon_app/account_page.dart';
 import 'package:salon_app/services_page.dart';
+import 'package:salon_app/shop_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,12 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int currentPage = 0;
-  List<Widget> pages = const [HomePage(), ServicesPage(), AccountPage()];
+  List<Widget> pages = const [
+    HomePage(),
+    ServicesPage(),
+    ShopPage(),
+    AccountPage()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -38,17 +44,19 @@ class _RootPageState extends State<RootPage> {
         title: const Text('Salon'),
       ),
       body: pages[currentPage],
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          debugPrint('Floating Action Button');
-        },
-        child: const Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     debugPrint('Floating Action Button');
+      //   },
+      //   child: const Icon(Icons.add),
+      // ),
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
           NavigationDestination(
               icon: Icon(Icons.calendar_month_outlined), label: 'Services'),
+          NavigationDestination(
+              icon: Icon(Icons.shopping_cart_outlined), label: 'Shop'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Account'),
         ],
         onDestinationSelected: (int index) {
