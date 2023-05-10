@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 int itemCount = 20;
 
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+class AccountPage extends StatelessWidget {
+  const AccountPage({super.key});
 
   @override
   Widget build(BuildContext context) {

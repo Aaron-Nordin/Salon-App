@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:salon_app/home_page.dart';
-import 'package:salon_app/profile_page.dart';
+import 'package:salon_app/account_page.dart';
+import 'package:salon_app/services_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int currentPage = 0;
-  List<Widget> pages = const [HomePage(), ProfilePage()];
+  List<Widget> pages = const [HomePage(), ServicesPage(), AccountPage()];
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,9 @@ class _RootPageState extends State<RootPage> {
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-          NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+          NavigationDestination(
+              icon: Icon(Icons.calendar_month_outlined), label: 'Services'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Account'),
         ],
         onDestinationSelected: (int index) {
           setState(() {
