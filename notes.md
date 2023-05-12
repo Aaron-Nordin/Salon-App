@@ -18,3 +18,15 @@
 ### Next
 - Continue adding nested pages
 - Reorganize lib?
+
+## 5.12.2023
+
+- Looked at how to implement layouts
+  - [Flutter Layouts from docs.flutter.dev](https://docs.flutter.dev/ui/layout)
+
+- Looked at how to create grid on home page and services page with linkable icons
+  - [Example code but from 2021 - stackoverflow](https://stackoverflow.com/questions/66028848/flutter-grid-of-buttons-that-redirects-to-other-page-when-clicked)
+
+### Next
+
+- Decide on and implement routeable grid on home page and services page
