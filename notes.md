@@ -30,3 +30,11 @@
 ### Next
 
 - Decide on and implement routeable grid on home page and services page, maybe gridview from 1st link
+
+## 5.15.2023
+- Added GridView to home_page and services_page
+  - [Code adapted from here](https://api.flutter.dev/flutter/widgets/GridView-class.html)
+- Looked into GridView Containers having multiple children such as an icon and text
+
+### Next
+- Find solution to last bullet point
