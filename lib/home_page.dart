@@ -16,17 +16,38 @@ class HomePage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(8),
           color: Colors.teal[100],
-          child: const Text("Temp 1"),
+          child: Column(
+            children: [
+              Expanded(
+                child: Image.asset('images/salon_icon.jpg'),
+              ),
+              const Text('column child')
+            ],
+          ),
         ),
         Container(
           padding: const EdgeInsets.all(8),
           color: Colors.teal[200],
-          child: const Text('Temp 2'),
+          child: Column(
+            children: [
+              Expanded(
+                child: Image.asset('images/salon_icon.jpg'),
+              ),
+              const Text('column child')
+            ],
+          ),
         ),
         Container(
           padding: const EdgeInsets.all(8),
           color: Colors.teal[300],
-          child: const Text('Temp 3'),
+          child: Column(
+            children: [
+              Expanded(
+                child: Image.asset('images/salon_icon.jpg'),
+              ),
+              const Text('column child')
+            ],
+          ),
         ),
       ],
     );
