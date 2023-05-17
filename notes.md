@@ -38,3 +38,13 @@
 
 ### Next
 - Find solution to last bullet point
+
+## 5.17.2023
+
+- Gridview on home_page and services_page: Containers now have a Column child, which has multiple children
+  - [SOF - multiple children in a container](https://stackoverflow.com/questions/57553821/is-there-a-way-to-include-multiple-children-inside-a-container)
+- The Column children consist of an image wrapped in an Expanded widget and a Text widget
+  - [Flutter Column](https://api.flutter.dev/flutter/widgets/Column-class.html), [Flutter Expanded](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
+
+### Next
+- Adjust spacing of Column children
