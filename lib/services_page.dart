@@ -20,7 +20,7 @@ class ServicesPage extends StatelessWidget {
               Expanded(
                 child: Image.asset('images/salon_icon.jpg'),
               ),
-              const Text('column child')
+              const Text('Haircuts')
             ],
           ),
         ),
@@ -32,7 +32,7 @@ class ServicesPage extends StatelessWidget {
               Expanded(
                 child: Image.asset('images/salon_icon.jpg'),
               ),
-              const Text('column child')
+              const Text('Beards & Shaves')
             ],
           ),
         ),
@@ -44,7 +44,7 @@ class ServicesPage extends StatelessWidget {
               Expanded(
                 child: Image.asset('images/salon_icon.jpg'),
               ),
-              const Text('column child')
+              const Text('Manicures & Pedicures')
             ],
           ),
         ),
@@ -56,7 +56,7 @@ class ServicesPage extends StatelessWidget {
               Expanded(
                 child: Image.asset('images/salon_icon.jpg'),
               ),
-              const Text('column child')
+              const Text('Waxing')
             ],
           ),
         ),
