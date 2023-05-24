@@ -48,3 +48,14 @@
 
 ### Next
 - Adjust spacing of Column children
+
+## 5.24.2023
+
+- Renamed Services
+- Learned about Flutter Bloc (state management) by Felix
+- Looked at different Flutter tutorials
+- Discussed changing goals - focus on contributing to Morel
+
+### Next
+- Flutter tutorial?
+- Discuss goals
